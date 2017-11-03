@@ -1,4 +1,4 @@
-#  Documentation
+ #  Documentation
 This libray aims at making sending of bulk SMS simple. Currently supporting Hubtel .NET SDK you can follow the steps below to send
 bulk SMS from your applications with a detailed logger.
 
@@ -8,7 +8,7 @@ bulk SMS from your applications with a detailed logger.
     //Specify your Environment path to your .txt, the .txt will be created automatically if it doesnt exist
       MessageLogger.LogPath = myPath;
 ```
-Supplying Contact List for Bulk SMS
+#### Supplying Contact List for Bulk SMS
 * From List
 ```cs
      //Get your phone Numbers .ToList() from your database, for demo purpose i am building the list
@@ -16,7 +16,7 @@ Supplying Contact List for Bulk SMS
        myphone.Add("0266275605");
        myphone.Add("0266275611");
        myphone.Add("0246684091");
-       myphone.Add("0266111");
+       myphone.Add("0266111"); //This is an invalid Number and will be saved to outbox.
   ``` 
 * From Database
  ```cs
@@ -30,18 +30,18 @@ Supplying Contact List for Bulk SMS
      Phone.PhoneNumbers = phoneNumbers
  ```    
 
-  You can sypply a .csv file with two columns Name & Phone
-   * From Uploaded .Csv File
+  
+   * From Uploaded .Csv File. You can sypply a .csv file with two columns eg. Name & Phone
   ```cs
    //Extract the .CSV to PhoneBook Dictionary
-    CSVReader.ExtractContacts(myPatth)   
-    
-   //Access the PhoneBook Dictionary for your Extracted COntacts  
+    CSVReader.ExtractContacts(myPatth)     
+   //Access the PhoneBook Dictionary for your Extracted COntacts 
+    var myContacts = Phone.PhoneBook.ToList();
     //Iterate over dictionary and get 
   ```
 
-   Configure and use the MessageClient to Send your Messages
-   * Save your keys in web.Config or App.Settings. Note: Note: A more Secure Approach
+  #### Configure and use the MessageClient to Send your Messages
+   * Save your keys in web.Config or App.Settings. Note: A more Secure Approach
 ```cs   
     ClientCredentials.ClientId = ConfigurationSettings.AppSettings["ClientId"];
     ClientCredentials.ClientSecret = ConfigurationSettings.AppSettings["ClientSecret"];
