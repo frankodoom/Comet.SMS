@@ -60,14 +60,14 @@ bulk SMS from your applications with a detailed logger.
   ```   
   * Accessing Sent Messages
 ```cs
-         //Get List of Sent Messages
-          var sentMessages = MessageLogger.sent.ToList();
-         //you can iterate over object and save the list to database
+    //Get List of Sent Messages
+     var sentMessages = MessageLogger.sent.ToList();
+    //you can iterate over object and save the list to database
 ```   
 
   * Accessing UnDelivered Messages
  ```cs
-       //All unsent messages in a batch can be accessed in the outbox object
-       MessageLogger.outbox.ToList();
-       // you can iterate over object and save the list to database
+    //All unsent messages in a batch can be accessed in the outbox object
+    MessageLogger.outbox.ToList();
+    // you can iterate over object and save the list to database
  ```    
