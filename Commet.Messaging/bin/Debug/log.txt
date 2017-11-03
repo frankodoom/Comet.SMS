@@ -1,0 +1,26 @@
+﻿03/11/17 16:37:33-Configuring Client && Establishing Server Connection
+03/11/17 16:37:33-Sending to........ 0266275605
+03/11/17 16:37:33-Formatted  0266275605 to +233266275605
+03/11/17 16:37:34- Message TO +233266275605 rejected due to server error !
+03/11/17 16:37:34-Sending to........ 0266275605
+03/11/17 16:37:34-Formatted  0266275605 to +233266275605
+03/11/17 16:37:35- Message TO +233266275605 rejected due to server error !
+03/11/17 16:37:35-Sending to........ 0246684093
+03/11/17 16:37:35-Formatted  0246684093 to +233246684093
+03/11/17 16:37:35- Message TO +233246684093 rejected due to server error !
+03/11/17 16:37:35-Sending to........ 0266111
+03/11/17 16:37:36-Formatted  0266111 to +233266111
+03/11/17 16:37:36- Message TO +233266111 Rejected due to length < 10
+03/11/17 16:37:58-Configuring Client && Establishing Server Connection
+03/11/17 16:37:58-Sending to........ 0266275605
+03/11/17 16:37:58-Formatted  0266275605 to +233266275605
+03/11/17 16:37:59- Message TO +233266275605 rejected due to server error !
+03/11/17 16:37:59-Sending to........ 0266275605
+03/11/17 16:38:00-Formatted  0266275605 to +233266275605
+03/11/17 16:38:00- Message TO +233266275605 rejected due to server error !
+03/11/17 16:38:00-Sending to........ 0246684093
+03/11/17 16:38:00-Formatted  0246684093 to +233246684093
+03/11/17 16:38:01- Message TO +233246684093 rejected due to server error !
+03/11/17 16:38:01-Sending to........ 0266111
+03/11/17 16:38:01-Formatted  0266111 to +233266111
+03/11/17 16:38:01- Message TO +233266111 Rejected due to length < 10

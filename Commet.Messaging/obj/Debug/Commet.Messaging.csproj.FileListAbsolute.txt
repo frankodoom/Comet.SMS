@@ -1,0 +1,11 @@
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\obj\Debug\Commet.Messaging.csprojResolveAssemblyReference.cache
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\obj\Debug\Commet.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Smsgh.Api.Sdk.dll
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Newtonsoft.Json.xml
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Smsgh.Api.Sdk.xml
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Comet.SMS.exe.config
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Comet.SMS.exe
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\bin\Debug\Comet.SMS.pdb
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\obj\Debug\Comet.SMS.exe
+C:\Users\FrankOdoom\Documents\Visual Studio 2017\Projects\Commet.Messaging\Commet.Messaging\obj\Debug\Comet.SMS.pdb

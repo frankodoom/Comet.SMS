@@ -1,0 +1,23 @@
+﻿
+        )     *                  (       *     (     
+   (   ( /(   (  `          *   )  )\ )  (  `    )\ )  
+   )\  )\())  )\))(   (   ` )  /( (()/(  )\))(  (()/(  
+ (((_)((_)\  ((_)()\  )\   ( )(_)) /(_))((_)()\  /(_)) 
+ )\___  ((_) (_()((_)((_) (_(_()) (_))  (_()((_)(_))   
+((/ __|/ _ \ |  \/  || __||_   _| / __| |  \/  |/ __|  
+ | (__| (_) || |\/| || _|   | | _ \__ \ | |\/| |\__ \  
+  \___|\___/ |_|  |_||___|  |_|(_)|___/ |_|  |_||___/  
+                                                       
+
+
+COMET.SMS
+This is a lightweight library for working with SMS in .Net currently build for Hubtel Support.
+*Send Single SMS
+*Send Bulk SMS
+*Send SMS From CSV
+*Optional Logging TxtFile
+*Validate Local Mobile Numbers(Ghanain (+233), 10)
+
+
+Contribute :
+follow developer @mr_odoom
