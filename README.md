@@ -1,4 +1,4 @@
- #  Documentation
+; #  Documentation
 This libray aims at making sending of bulk SMS simple. Currently supporting Hubtel .NET SDK you can follow the steps below to send
 bulk SMS from your applications with a detailed logger.
 
@@ -27,11 +27,12 @@ bulk SMS from your applications with a detailed logger.
    * Add list to PhoneNumbers for sending 
   ```cs
      //PhoneNumber is an Inmemory Object List<string>Phonebook
-     Phone.PhoneNumbers = phoneNumbers
+     Phone.PhoneNumbers = phoneNumbers;
  ```    
 
   
-   * From Uploaded .Csv File. You can sypply a .csv file with two columns eg. Name & Phone
+   * From .Csv File. 
+    You can send bulk sms from a .csv file with two columns eg. Name & Phone
   ```cs
    //Extract the .CSV to PhoneBook Dictionary
     CSVReader.ExtractContacts(myPatth)     
@@ -41,12 +42,12 @@ bulk SMS from your applications with a detailed logger.
   ```
 
   #### Configure and use the MessageClient to Send your Messages
-   * Save your keys in web.Config or App.Settings. Note: A more Secure Approach
+   * Supply your keys from web.Config or App.Settings. Note: This is a more Secure Approach
 ```cs   
     ClientCredentials.ClientId = ConfigurationSettings.AppSettings["ClientId"];
     ClientCredentials.ClientSecret = ConfigurationSettings.AppSettings["ClientSecret"];
    ```  
-   * Supply your clientSecrete and Keys Directly. Note: A Less Secure Approach
+   * Supply your clientSecrete and Keys Directly.
   ```cs  
   
     ClientCredentials.ClientId ="myClientId" ;
