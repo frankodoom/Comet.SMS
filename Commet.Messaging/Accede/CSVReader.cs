@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Comet.SMS
 {
-   //
    public class CsvReader
-    {           
+    { 
+        //This CSV is Designed TO Load Two Columns customise it to laod many as you wish
+        
         public int ExtractContacts(string dir)
         {
             //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), dir);
@@ -22,11 +23,12 @@ namespace Comet.SMS
                      var line = reader.ReadLine();
                      var values = line.Split(',');
                      var name = values[0];
-                     var phone = values[1];
 
-                     //Add to phonebook
+                    var phone = values[1];
+
+                     //Add to  phone and number to phonebook
                       Phone.PhoneBook.Add(name, phone);
-                     //You can save phonebook to database from her                  
+                    //TODO: LOg CSV Activity               
                 }
             }
             return 1;

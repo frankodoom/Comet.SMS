@@ -11,21 +11,18 @@
 
 COMET.SMS
 This is a lightweight library for working with SMS in .Net currently build for Hubtel Support.
-*Send Single SMS
-*Send Bulk SMS
+*Send Bulk  Asynchronously
 *Send SMS From CSV
-*Optional Logging TxtFile
-*Validate Local Mobile Numbers(Ghanain (+233), 10)
+*Optional Logging
+*Validate Local Mobile Numbers- Ghana
 
 
 Using the libray... :-)
 
-
-
 			
 private static void Main(string[] args)
  {	
-	/Fetch Your Keys From  App Settings for Security 
+	  //Fetch Your Keys From  App or Web.Config (A more secure approach)
       ClientCredentials.ClientId = ConfigurationSettings.AppSettings["ClientId"];
       ClientCredentials.ClientSecret = ConfigurationSettings.AppSettings["ClientSecret"];
 

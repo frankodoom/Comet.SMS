@@ -1,26 +1,75 @@
-﻿03/11/17 16:37:33-Configuring Client && Establishing Server Connection
-03/11/17 16:37:33-Sending to........ 0266275605
-03/11/17 16:37:33-Formatted  0266275605 to +233266275605
-03/11/17 16:37:34- Message TO +233266275605 rejected due to server error !
-03/11/17 16:37:34-Sending to........ 0266275605
-03/11/17 16:37:34-Formatted  0266275605 to +233266275605
-03/11/17 16:37:35- Message TO +233266275605 rejected due to server error !
-03/11/17 16:37:35-Sending to........ 0246684093
-03/11/17 16:37:35-Formatted  0246684093 to +233246684093
-03/11/17 16:37:35- Message TO +233246684093 rejected due to server error !
-03/11/17 16:37:35-Sending to........ 0266111
-03/11/17 16:37:36-Formatted  0266111 to +233266111
-03/11/17 16:37:36- Message TO +233266111 Rejected due to length < 10
-03/11/17 16:37:58-Configuring Client && Establishing Server Connection
-03/11/17 16:37:58-Sending to........ 0266275605
-03/11/17 16:37:58-Formatted  0266275605 to +233266275605
-03/11/17 16:37:59- Message TO +233266275605 rejected due to server error !
-03/11/17 16:37:59-Sending to........ 0266275605
-03/11/17 16:38:00-Formatted  0266275605 to +233266275605
-03/11/17 16:38:00- Message TO +233266275605 rejected due to server error !
-03/11/17 16:38:00-Sending to........ 0246684093
-03/11/17 16:38:00-Formatted  0246684093 to +233246684093
-03/11/17 16:38:01- Message TO +233246684093 rejected due to server error !
-03/11/17 16:38:01-Sending to........ 0266111
-03/11/17 16:38:01-Formatted  0266111 to +233266111
-03/11/17 16:38:01- Message TO +233266111 Rejected due to length < 10
+06/11/17 16:02:42-Configuring Client && Establishing Server Connection
+06/11/17 16:02:42-Sending to........ 0266275605
+06/11/17 16:02:42-Formatted  0266275605 to +233266275605
+06/11/17 16:02:44- Message TO +233266275605 rejected due to server error !
+06/11/17 16:02:44-Sending to........ 0266275605
+06/11/17 16:02:44-Formatted  0266275605 to +233266275605
+06/11/17 16:02:44- Message TO +233266275605 rejected due to server error !
+06/11/17 16:02:44-Sending to........ 0266275605
+06/11/17 16:02:44-Formatted  0266275605 to +233266275605
+06/11/17 16:02:44- Message TO +233266275605 rejected due to server error !
+06/11/17 16:02:44-Sending to........ 0266275605
+06/11/17 16:02:44-Formatted  0266275605 to +233266275605
+06/11/17 16:02:45- Message TO +233266275605 rejected due to server error !
+06/11/17 16:02:45-Sending to........ 0266275605
+06/11/17 16:02:45-Formatted  0266275605 to +233266275605
+06/11/17 16:02:45- Message TO +233266275605 rejected due to server error !
+06/11/17 16:02:46-Sending to........ 0266275605
+06/11/17 16:02:46-Formatted  0266275605 to +233266275605
+06/11/17 16:02:46- Message TO +233266275605 rejected due to server error !
+06/11/17 16:02:46-Sending to........ 0246684093
+06/11/17 16:02:46-Formatted  0246684093 to +233246684093
+06/11/17 16:02:47- Message TO +233246684093 rejected due to server error !
+06/11/17 16:02:47-Sending to........ 0266111
+06/11/17 16:02:47-Formatted  0266111 to +233266111
+06/11/17 16:02:47- Message TO +233266111 Rejected due to length < 10
+06/11/17 21:50:55-Configuring Client && Establishing Server Connection
+06/11/17 21:50:55-Sending to........ 0266275605
+06/11/17 21:50:55-Formatted  0266275605 to +233266275605
+06/11/17 21:50:57- Message TO +233266275605 rejected due to server error !
+06/11/17 21:50:57-Sending to........ 0266275605
+06/11/17 21:50:57-Formatted  0266275605 to +233266275605
+06/11/17 21:50:57- Message TO +233266275605 rejected due to server error !
+06/11/17 21:50:58-Sending to........ 0266275605
+06/11/17 21:50:58-Formatted  0266275605 to +233266275605
+06/11/17 21:50:58- Message TO +233266275605 rejected due to server error !
+06/11/17 21:50:58-Sending to........ 0266275605
+06/11/17 21:50:58-Formatted  0266275605 to +233266275605
+06/11/17 21:50:58- Message TO +233266275605 rejected due to server error !
+06/11/17 21:50:59-Sending to........ 0266275605
+06/11/17 21:50:59-Formatted  0266275605 to +233266275605
+06/11/17 21:50:59- Message TO +233266275605 rejected due to server error !
+06/11/17 21:50:59-Sending to........ 0266275605
+06/11/17 21:50:59-Formatted  0266275605 to +233266275605
+06/11/17 21:50:59- Message TO +233266275605 rejected due to server error !
+06/11/17 21:51:00-Sending to........ 0246684093
+06/11/17 21:51:00-Formatted  0246684093 to +233246684093
+06/11/17 21:51:00- Message TO +233246684093 rejected due to server error !
+06/11/17 21:51:00-Sending to........ 0266111
+06/11/17 21:51:00-Formatted  0266111 to +233266111
+06/11/17 21:51:00- Message TO +233266111 Rejected due to length < 10
+06/11/17 21:52:32-Configuring Client && Establishing Server Connection
+06/11/17 21:52:32-Sending to........ 0266275605
+06/11/17 21:52:33-Formatted  0266275605 to +233266275605
+06/11/17 21:52:34- Message TO +233266275605 rejected due to server error !
+06/11/17 21:52:34-Sending to........ 0266275605
+06/11/17 21:52:34-Formatted  0266275605 to +233266275605
+06/11/17 21:52:35- Message TO +233266275605 rejected due to server error !
+06/11/17 21:52:35-Sending to........ 0266275605
+06/11/17 21:52:35-Formatted  0266275605 to +233266275605
+06/11/17 21:52:35- Message TO +233266275605 rejected due to server error !
+06/11/17 21:52:35-Sending to........ 0266275605
+06/11/17 21:52:35-Formatted  0266275605 to +233266275605
+06/11/17 21:52:36- Message TO +233266275605 rejected due to server error !
+06/11/17 21:52:36-Sending to........ 0266275605
+06/11/17 21:52:36-Formatted  0266275605 to +233266275605
+06/11/17 21:52:36- Message TO +233266275605 rejected due to server error !
+06/11/17 21:52:37-Sending to........ 0266275605
+06/11/17 21:52:37-Formatted  0266275605 to +233266275605
+06/11/17 21:52:37- Message TO +233266275605 rejected due to server error !
+06/11/17 21:52:37-Sending to........ 0246684093
+06/11/17 21:52:37-Formatted  0246684093 to +233246684093
+06/11/17 21:52:38- Message TO +233246684093 rejected due to server error !
+06/11/17 21:52:38-Sending to........ 0266111
+06/11/17 21:52:38-Formatted  0266111 to +233266111
+06/11/17 21:52:38- Message TO +233266111 Rejected due to length < 10

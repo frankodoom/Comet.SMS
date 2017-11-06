@@ -61,7 +61,6 @@
     <Compile Include="Demo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\log.txt" />
     <Content Include="ChangeLog.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>

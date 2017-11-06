@@ -9,8 +9,8 @@ namespace Comet.SMS
 {
     public class MessageLogger
     {
-        private static List<string> outbox = new List<string>();
-        private static List<string> sent = new List<string>();
+        public static List<string> outbox = new List<string>();
+        public static List<string> sent = new List<string>();
         public static string LogPath = @"\log.txt";
         public static bool EnableLogging;
 

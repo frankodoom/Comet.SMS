@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Comet.SMS
 {
-    public class MessageClient :  IMessageClient
+    public class MessageClient : IMessageClient
     {
         public string MessageBody { get; set; }
         public string MessageId { get; set; }
         public string DeliveryReciept { get; set; }
         public bool RegisteredDelivery { get; set; }
-      
+
 
         public MessageClient(string messageId, string message, bool registerdDelivery)
         {
@@ -21,17 +21,22 @@ namespace Comet.SMS
             RegisteredDelivery = registerdDelivery;
         }
 
-        public void SendBulkSMS()
+        public Task SendBulkSMSAsync()
+        {         
+            return Task.FromResult(doWork());
+        }
+
+
+        public int doWork()
         {
             var host = new ApiHost(new BasicAuth(ClientCredentials.GetClientId(), ClientCredentials.GetSecret()));
             MessageLogger.LogStatus(MessageLogger.LogPath, "Configuring Client && Establishing Server Connection");
             var messageApi = new MessagingApi(host);
-
             foreach (var phone in Phone.PhoneNumbers)
             {
-                MessageLogger.LogStatus(MessageLogger.LogPath, "Sending to........ "+ phone);
+                MessageLogger.LogStatus(MessageLogger.LogPath, "Sending to........ " + phone);
                 //Remove 0 and add +233 to the beginning of the phone numbers
-                string formattedPhone =Phone.Validate(phone);
+                string formattedPhone = Phone.Validate(phone);
                 //checking the Ghanaian standard mobile length
                 if (phone.Length < 10)
                 {
@@ -49,16 +54,14 @@ namespace Comet.SMS
                     catch (Exception e)
                     {
                         MessageLogger.logOutbox(formattedPhone, "rejected due to server error !");
-                        //pass control to the next iteration of the enclosingforeach statement
+                        //pass control to the next iteration of the enclosing foreach statement
                         continue;
 
                     }
-                }          
+                }
             }
-        }
-        public void SendSMS()
-        {
-           //Sending Single SMS Code Goes Here
+            //returns 1 when successful
+            return 1; 
         }
     }
 }

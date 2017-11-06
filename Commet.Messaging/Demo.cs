@@ -20,23 +20,24 @@ namespace Comet.SMS
             //Enable Logging- This will be output to a .txt file
             MessageLogger.EnableLogging = true;
             //Optional Log to text Feature: create a .txt file and point to path        
-            //MessageLogger.LogPath = "";
+           // MessageLogger.LogPath = "@/output.txt";
 
             //Get your phone Numbers .ToList() from your database, for demo purpose i am building the list
+
             List<string> myphone = new List<string>();
-            myphone.Add("0266275605");
-            myphone.Add("0266275605");
-            myphone.Add("0246684093");
+            myphone.Add("0266275601");
+            myphone.Add("0266271201");
+            myphone.Add("0266271231");
             myphone.Add("0266111");
+            
 
             //Add list of Phone Numbers
             Phone.PhoneNumbers = myphone;
             // Configure and use the MessageClient to Send your Messages
-            MessageClient msg = new MessageClient("Testing", "Testing Bulk SMS", true);
-            msg.SendBulkSMS();
-
+            MessageClient msg = new MessageClient("Accede", "Testing Bulk SMS", true);
+            msg.SendBulkSMSAsync();
             Console.WriteLine("Done...");
-            Console.ReadKey();
+            Console.ReadKey();        
         }
     }
 
