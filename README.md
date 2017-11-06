@@ -1,6 +1,6 @@
-; #  Documentation
+####  Documentation
 This libray aims at making sending of bulk SMS simple. Currently supporting Hubtel .NET SDK you can follow the steps below to send
-bulk SMS from your applications with a detailed logger.
+bulk SMS from your .NET applications.
 
 ```cs
     //Enable Logging- This will be output to a .txt file
