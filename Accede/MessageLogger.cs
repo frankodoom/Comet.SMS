@@ -17,6 +17,7 @@ namespace Comet.SMS
         public static void logOutbox( string data, string message )
         {
             outbox.Add(data);
+
             //Add to reject list
             if(MessageLogger.EnableLogging == true)
             {
@@ -37,8 +38,12 @@ namespace Comet.SMS
         }
 
         public static void LogStatus(string dir, string logMessage)
-        {        
-            string path = Environment.CurrentDirectory + dir;
+        {
+            //string path = Environment.CurrentDirectory + dir;
+
+            string path = AppDomain.CurrentDomain.BaseDirectory + dir;
+
+            //string path = Path.GetFullPath(LogPath);
 
             using (StreamWriter w = File.AppendText(path))
             {

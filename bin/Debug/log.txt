@@ -1,0 +1,57 @@
+09/11/17 08:04:05-Establishing Server Connection
+09/11/17 08:04:05-.............................................................
+09/11/17 08:04:05-Sending to........ 0249121213
+09/11/17 08:04:05-Formatted  0249121213 to +233249121213
+09/11/17 08:04:05- Message TO +233249121213 rejected due to server error !
+09/11/17 08:04:05-Sending to........ 0277121213
+09/11/17 08:04:05-Formatted  0277121213 to +233277121213
+09/11/17 08:04:05- Message TO +233277121213 rejected due to server error !
+09/11/17 08:04:05-Sending to........ 0266275605
+09/11/17 08:04:05-Formatted  0266275605 to +233266275605
+09/11/17 08:04:05- Message TO +233266275605 rejected due to server error !
+09/11/17 08:04:05-Sending to........ 0266111
+09/11/17 08:04:05-Formatted  0266111 to +233266111
+09/11/17 08:04:05- Message TO +233266111 Rejected due to length < 10
+09/11/17 08:04:49-.............................................................
+09/11/17 08:04:49-Establishing Server Connection
+09/11/17 08:04:49-
+09/11/17 08:04:49-Sending to........ 0249121213
+09/11/17 08:04:49-Formatted  0249121213 to +233249121213
+09/11/17 08:04:50- Message TO +233249121213 rejected due to server error !
+09/11/17 08:04:50-Sending to........ 0277121213
+09/11/17 08:04:50-Formatted  0277121213 to +233277121213
+09/11/17 08:04:50- Message TO +233277121213 rejected due to server error !
+09/11/17 08:04:50-Sending to........ 0266275605
+09/11/17 08:04:50-Formatted  0266275605 to +233266275605
+09/11/17 08:04:51- Message TO +233266275605 rejected due to server error !
+09/11/17 08:04:51-Sending to........ 0266111
+09/11/17 08:04:51-Formatted  0266111 to +233266111
+09/11/17 08:04:51- Message TO +233266111 Rejected due to length < 10
+09/11/17 08:06:11-Starting New Batch.............................................................
+09/11/17 08:06:11-Establishing Server Connection
+09/11/17 08:06:11-Sending to........ 0249121213
+09/11/17 08:06:12-Formatted  0249121213 to +233249121213
+09/11/17 08:06:12- Message TO +233249121213 rejected due to server error !
+09/11/17 08:06:13-Sending to........ 0277121213
+09/11/17 08:06:13-Formatted  0277121213 to +233277121213
+09/11/17 08:06:13- Message TO +233277121213 rejected due to server error !
+09/11/17 08:06:13-Sending to........ 0266275605
+09/11/17 08:06:14-Formatted  0266275605 to +233266275605
+09/11/17 08:06:14- Message TO +233266275605 rejected due to server error !
+09/11/17 08:06:14-Sending to........ 0266111
+09/11/17 08:06:14-Formatted  0266111 to +233266111
+09/11/17 08:06:14- Message TO +233266111 Rejected due to length < 10
+09/11/17 08:13:29-Starting New Batch.............................................................
+09/11/17 08:13:29-Establishing Server Connection
+09/11/17 08:13:29-Sending to........ 0249121213
+09/11/17 08:13:30-Formatted  0249121213 to +233249121213
+09/11/17 08:13:31- Message TO +233249121213 rejected due to server error !
+09/11/17 08:13:31-Sending to........ 0277121213
+09/11/17 08:13:31-Formatted  0277121213 to +233277121213
+09/11/17 08:13:31- Message TO +233277121213 rejected due to server error !
+09/11/17 08:13:31-Sending to........ 0266275605
+09/11/17 08:13:31-Formatted  0266275605 to +233266275605
+09/11/17 08:13:32- Message TO +233266275605 rejected due to server error !
+09/11/17 08:13:32-Sending to........ 0266111
+09/11/17 08:13:32-Formatted  0266111 to +233266111
+09/11/17 08:13:32- Message TO +233266111 Rejected due to length < 10

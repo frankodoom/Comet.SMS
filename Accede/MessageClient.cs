@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Comet.SMS
 {
-    public class MessageClient : IMessageClient
+    public class MessageClient : IMessageClient, IDisposable
     {
         public string MessageBody { get; set; }
         public string MessageId { get; set; }
@@ -23,18 +23,27 @@ namespace Comet.SMS
 
         public Task SendBulkSMSAsync()
         {         
-            return Task.FromResult(doWork());
+            return Task.FromResult(dobulkJob());
         }
 
 
-        public int doWork()
+        public int dobulkJob()
         {
             var host = new ApiHost(new BasicAuth(ClientCredentials.GetClientId(), ClientCredentials.GetSecret()));
-            MessageLogger.LogStatus(MessageLogger.LogPath, "Configuring Client && Establishing Server Connection");
+            if(MessageLogger.EnableLogging = true)
+            {
+                MessageLogger.LogStatus(MessageLogger.LogPath, "Starting New Batch.............................................................");
+                MessageLogger.LogStatus(MessageLogger.LogPath, "Establishing Server Connection");
+                
+            }
+          
             var messageApi = new MessagingApi(host);
             foreach (var phone in Phone.PhoneNumbers)
             {
-                MessageLogger.LogStatus(MessageLogger.LogPath, "Sending to........ " + phone);
+                if (MessageLogger.EnableLogging = true)
+                {
+                    MessageLogger.LogStatus(MessageLogger.LogPath, "Sending to........ " + phone);
+                }
                 //Remove 0 and add +233 to the beginning of the phone numbers
                 string formattedPhone = Phone.Validate(phone);
                 //checking the Ghanaian standard mobile length
@@ -56,12 +65,16 @@ namespace Comet.SMS
                         MessageLogger.logOutbox(formattedPhone, "rejected due to server error !");
                         //pass control to the next iteration of the enclosing foreach statement
                         continue;
-
                     }
                 }
             }
-            //returns 1 when successful
-            return 1; 
+            //returns number of sent >1 when successful
+            return MessageLogger.sent.Count; 
+        }
+
+        public void Dispose()
+        {
+            
         }
     }
 }
