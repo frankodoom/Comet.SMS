@@ -9,43 +9,4 @@
   \___|\___/ |_|  |_||___|  |_|(_)|___/ |_|  |_||___/  
                                                        
 
-COMET.SMS
-This is a lightweight library for working with SMS in .Net currently build for Hubtel Support.
-*Send Bulk  Asynchronously
-*Send SMS From CSV
-*Optional Logging
-*Validate Local Mobile Numbers- Ghana
-
-
-Using the libray... :-)
-
-			
-private static void Main(string[] args)
- {	
-	  //Fetch Your Keys From  App or Web.Config (A more secure approach)
-      ClientCredentials.ClientId = ConfigurationSettings.AppSettings["ClientId"];
-      ClientCredentials.ClientSecret = ConfigurationSettings.AppSettings["ClientSecret"];
-
-    //Enable Logging- THis will be output to a .txt file
-      MessageLogger.EnableLogging = true;
-      MessageLogger.LogPath = "";
-
-
-    //Get your phone Numbers .ToList() from your database, for demo purpose i am building the list
-      List< string > myphone = new List<string>();
-      myphone.Add("0266275605");
-      myphone.Add("0266275605");
-      myphone.Add("0266111");
-
-      //Add list of Phone Numbers
-      Phone.PhoneNumbers = myphone;
-      //Configure and use the MessageClient to Send your Messages
-      MessageClient msg = new MessageClient("Testing", "Testing Bulk SMS", true);
-      msg.SendBulkSMS();
-
-      Console.WriteLine("Done...");
-      Console.ReadKey();
-	}
-
-Contribute :
-follow developer twitter: @mr_odoom github:
+An Easy to use Bulk SMS Library Based on Hubtel .NET SDK
