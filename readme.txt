@@ -1,4 +1,4 @@
-﻿   
+
         )     *                  (       *     (     
    (   ( /(   (  `          *   )  )\ )  (  `    )\ )  
    )\  )\())  )\))(   (   ` )  /( (()/(  )\))(  (()/(  
@@ -10,4 +10,7 @@
                                                        
 
 An Easy to use .NET Bulk SMS Library 
+
+Supported Providers:
+HUbtel
 
