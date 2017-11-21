@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Comet.SMS
 {
@@ -12,7 +13,7 @@ namespace Comet.SMS
     { 
         //This CSV is Designed TO Load Two Columns customise it to laod many as you wish
         
-        public int ExtractContacts(string dir)
+        public int ExtractContacts(string dir, HttpPostedFileBase file)
         {
             //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), dir);
             string path = Environment.CurrentDirectory + dir;
@@ -23,8 +24,7 @@ namespace Comet.SMS
                      var line = reader.ReadLine();
                      var values = line.Split(',');
                      var name = values[0];
-
-                    var phone = values[1];
+                     var phone = values[1];
 
                      //Add to  phone and number to phonebook
                       Phone.PhoneBook.Add(name, phone);
