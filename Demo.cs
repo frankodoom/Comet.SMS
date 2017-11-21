@@ -34,9 +34,12 @@ namespace Comet.SMS
             Phone.PhoneNumbers = myphone;
             // Configure and use the MessageClient to Send your Messages
             MessageClient msg = new MessageClient("Accede", "Testing Bulk SMS", true);
+           
             var sumn = msg.SendBulkSMSAsync();
             Console.WriteLine("Done...");
-            Console.ReadKey();        
+            Console.ReadKey();
+
+
         }
     }
 

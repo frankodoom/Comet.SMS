@@ -30,7 +30,7 @@ namespace Comet.SMS
         public int dobulkJob()
         {
             var host = new ApiHost(new BasicAuth(ClientCredentials.GetClientId(), ClientCredentials.GetSecret()));
-            if(MessageLogger.EnableLogging = true)
+            if(MessageLogger.EnableLogging == true)
             {
                 MessageLogger.LogStatus(MessageLogger.LogPath, "Starting New Batch.............................................................");
                 MessageLogger.LogStatus(MessageLogger.LogPath, "Establishing Server Connection");
@@ -40,7 +40,7 @@ namespace Comet.SMS
             var messageApi = new MessagingApi(host);
             foreach (var phone in Phone.PhoneNumbers)
             {
-                if (MessageLogger.EnableLogging = true)
+                if (MessageLogger.EnableLogging == true)
                 {
                     MessageLogger.LogStatus(MessageLogger.LogPath, "Sending to........ " + phone);
                 }
