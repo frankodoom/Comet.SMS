@@ -11,18 +11,27 @@ namespace Comet.SMS
     {
         //Temp Hold List of Numbers
         public static List<string> PhoneNumbers;
+        //Ghanaian Mobile Number Formatting Setting
+        public static bool FormatLocal = false;
 
         //Temp Hold Name and Phone Number
         public static Dictionary<string, string> PhoneBook = new Dictionary<string, string>();
 
         //Override validation to allow custom Phone Number Validation
         public abstract string CustomValidate(string Phone);
+
+
         public static string Validate(string phone)
         {
             int requiredPhoneLength = phone.Length - 1;
             // formatting with Ghana Country code
             string newPhone = "+233" + phone.Substring(1, requiredPhoneLength);
-            MessageLogger.LogStatus(MessageLogger.LogPath, "Formatted  " + phone + " to " + newPhone);
+
+            if (MessageLogger.EnableLogging == true)
+            {
+                MessageLogger.LogStatus(MessageLogger.LogPath, "Formatted  " + phone + " to " + newPhone);
+            }
+  
             return newPhone;
         }
 

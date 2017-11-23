@@ -9,12 +9,15 @@ using System.Web;
 
 namespace Comet.SMS
 {
-   public class CsvReader
+   public class ExcelReader
     { 
         //This CSV is Designed TO Load Two Columns customise it to laod many as you wish
         
         public int ExtractContacts(string dir, HttpPostedFileBase file)
         {
+            //TODO Save File TO TempLocation
+
+
             //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), dir);
             string path = Environment.CurrentDirectory + dir;
             using (var reader = new StreamReader(path))
@@ -25,10 +28,10 @@ namespace Comet.SMS
                      var values = line.Split(',');
                      var name = values[0];
                      var phone = values[1];
-
                      //Add to  phone and number to phonebook
                       Phone.PhoneBook.Add(name, phone);
-                    //TODO: LOg CSV Activity               
+                    //TODO: Log CSV Activity    
+                    //TODO Delete CSV File
                 }
             }
             return 1;

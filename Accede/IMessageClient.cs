@@ -8,8 +8,6 @@ namespace Comet.SMS.Service.Interface
 {
     public interface IMessageClient
     {
-        Task SendBulkSMSAsync();
-
-        
+        Task SendSMSAsync();    
     }
 }

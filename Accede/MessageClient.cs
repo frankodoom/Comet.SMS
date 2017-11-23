@@ -21,14 +21,16 @@ namespace Comet.SMS
             RegisteredDelivery = registerdDelivery;
         }
 
-        public Task SendBulkSMSAsync()
+        public Task SendSMSAsync()
         {         
-            return Task.FromResult(dobulkJob());
+            return Task.FromResult(doSMSJob());
         }
 
 
-        public int dobulkJob()
+        public int doSMSJob()
         {
+            string formattedPhone = "";
+
             var host = new ApiHost(new BasicAuth(ClientCredentials.GetClientId(), ClientCredentials.GetSecret()));
             if(MessageLogger.EnableLogging == true)
             {
@@ -38,14 +40,22 @@ namespace Comet.SMS
             }
           
             var messageApi = new MessagingApi(host);
+
+
             foreach (var phone in Phone.PhoneNumbers)
             {
+
                 if (MessageLogger.EnableLogging == true)
                 {
                     MessageLogger.LogStatus(MessageLogger.LogPath, "Sending to........ " + phone);
                 }
+
                 //Remove 0 and add +233 to the beginning of the phone numbers
-                string formattedPhone = Phone.Validate(phone);
+                if (Phone.FormatLocal == true)
+                {
+                    formattedPhone = Phone.Validate(phone);
+                }
+             
                 //checking the Ghanaian standard mobile length
                 if (phone.Length < 10)
                 {
